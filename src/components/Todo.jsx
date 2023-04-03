@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Check, Trash } from "@phosphor-icons/react";
 
 const Todo = ({ todo, completed, toggleComplete, deleteTodo }) => {
+
+  useEffect(() => {
+
+    console.log('salve')
+
+
+  }, [])
+
   return (
     <li className={`${completed && 'completed'}`} >
       <p className={`${completed && 'completed'}`} > {todo}</p>

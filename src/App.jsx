@@ -44,8 +44,6 @@ function App() {
 
   // Update todo in firebase
 
-  /* você pode passar o id do documento como um argumento da função toggleComplete. Isso permitirá que você obtenha o documento correto do Firebase e atualize seus dados */
-
   const toggleComplete = async (id, todo) => {
     await updateDoc(doc(db, 'todos', id), {
       completed: !todo.completed,
@@ -53,7 +51,6 @@ function App() {
     });
 
   };
-
 
 
   //delete todo from firebase
@@ -79,7 +76,7 @@ function App() {
           <ul className='mt-8' >
 
 
-
+            {/* 
             {todos.map((todo) => {
 
               return (
@@ -88,7 +85,7 @@ function App() {
               )
 
             })}
-
+ */}
           </ul>
 
         </div>
