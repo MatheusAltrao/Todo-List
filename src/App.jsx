@@ -6,7 +6,7 @@ import { Plus } from "@phosphor-icons/react";
 
 import { collection, onSnapshot, query, updateDoc, doc, addDoc, deleteDoc } from 'firebase/firestore';
 import { db } from './firebase';
-/* import TodoComponent from './components/TodoComponent' */
+import TodoComponent from './components/TodoComponent'
 
 function App() {
 
@@ -76,16 +76,16 @@ function App() {
           <ul className='mt-8' >
 
 
-            {/* 
+
             {todos.map((todo) => {
 
               return (
-                <Todo key={todo.id} todo={todo.text} completed={todo.completed} toggleComplete={() => toggleComplete(todo.id, todo)}
+                <TodoComponent key={todo.id} todo={todo.text} completed={todo.completed} toggleComplete={() => toggleComplete(todo.id, todo)}
                   deleteTodo={() => deleteTodo(todo.id, todo)} />
               )
 
             })}
- */}
+
           </ul>
 
         </div>
