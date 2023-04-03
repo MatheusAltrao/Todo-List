@@ -6,7 +6,7 @@ import { Plus } from "@phosphor-icons/react";
 
 import { collection, onSnapshot, query, updateDoc, doc, addDoc, deleteDoc } from 'firebase/firestore';
 import { db } from './firebase';
-import Todo from './components/todo';
+/* import TodoComponent from './components/TodoComponent' */
 
 function App() {
 

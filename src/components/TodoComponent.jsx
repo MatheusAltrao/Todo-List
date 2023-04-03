@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Check, Trash } from "@phosphor-icons/react";
 
-const Todo = ({ todo, completed, toggleComplete, deleteTodo }) => {
+const TodoComponent = ({ todo, completed, toggleComplete, deleteTodo }) => {
 
   useEffect(() => {
 
@@ -21,4 +21,4 @@ const Todo = ({ todo, completed, toggleComplete, deleteTodo }) => {
   )
 }
 
-export default Todo
+export default TodoComponent
