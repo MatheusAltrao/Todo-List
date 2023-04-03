@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body *{
+  font-family: 'Roboto', sans-serif;
+}
+
+.icon{
+  @apply text-[24px];
+  @apply cursor-pointer;
+}
+
+
+li{
+  @apply flex;
+  @apply items-center;
+  @apply justify-between;
+  @apply bg-white;
+  @apply p-2 rounded-lg;
+  @apply mt-2;
+  @apply select-none;
+  
+}
+
+li.completed{
+    @apply opacity-70;
+}
+
+
+
+li:hover{
+  @apply bg-gray-100;
+}
+
+p{
+  @apply font-medium;
+  @apply text-[18px];
+}
+
+p.completed{
+  text-decoration: line-through;
+}
+
