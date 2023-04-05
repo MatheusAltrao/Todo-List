@@ -31,7 +31,7 @@ li.completed{
 
 
 li:hover{
-  @apply bg-gray-100;
+  @apply bg-white;
 }
 
 p{
@@ -41,5 +41,15 @@ p{
 
 p.completed{
   text-decoration: line-through;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  @apply bg-gray-200;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-purple-500;
+  border-radius: 10px;
 }
 

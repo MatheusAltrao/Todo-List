@@ -59,21 +59,21 @@ function App() {
   };
 
   return (
-    <div className='min-h-screen bg-purple-900  '>
-      <div className='flex items-center  min-h-screen flex-col pt-20 px-4  '>
+    <div className='min-h-screen bg-purple-900 overflow-y-hidden  '>
+      <div className='flex items-center  min-h-screen flex-col pt-20 pb-8 px-4  '>
         <div className='flex items-center justify-between w-full max-w-[395px] '>
           <h1 className='text-[32px] font-medium text-[#fff] '>Lista de tarefas</h1>
           <a target='_blank' href="https://myportfolio-omega-nine.vercel.app/"><img className='h-[50px] w-[50px]' src={Logo} alt="" /></a>
         </div>
 
 
-        <div className='bg-gray-200 h-full w-full max-w-[400px] rounded-lg p-4 shadow-2xl shadow-gray-900 mt-4' >
-          <div className='w-full flex items-center justify-between gap-4'>
-            <input value={input} onChange={(e) => setInput(e.target.value)} className='h-[40px] w-full rounded-lg px-4 text-[1.2rem] font-normal outline-purple-800' type="text" placeholder='Insira a sua tarefa aqui' />
+        <div className='bg-gray-200 h-full w-full max-w-[400px] rounded-lg  shadow-2xl shadow-gray-900 mt-4' >
+          <div className='w-full flex items-center justify-between gap-4 px-4 pt-4'>
+            <input value={input} onChange={(e) => setInput(e.target.value)} className='  h-[40px] w-full rounded-lg px-4 text-[16px] font-normal outline-purple-800' type="text" placeholder='Insira a sua tarefa aqui' />
             <button onClick={createTodo} className='w-[50px] h-[40px] bg-purple-900 text-[#fff] flex items-center justify-center rounded-lg cursor-pointer' ><Plus size={32} /></button>
           </div>
 
-          <ul className='mt-8' >
+          <ul className='mt-8  min-h-[0px]   max-h-[400px] overflow-y-scroll px-4 pb-4  ' >
 
 
 
